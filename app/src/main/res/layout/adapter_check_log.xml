@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white">
+    
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+        android:layout_marginRight="@dimen/home_item_left_right_space_15"
+ />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/check_logistics_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="路上"
+        android:textColor="@color/main_text_three_color"
+        android:textSize="@dimen/font_size_15" />
+
+    <TextView
+        android:id="@+id/check_logistics_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="00.00.00"
+         android:textColor="@color/text_color"
+        android:textSize="@dimen/font_size_14" />
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line_color"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>
+</LinearLayout>

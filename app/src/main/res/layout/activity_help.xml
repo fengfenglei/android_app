@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/line_color"/>
+            <Button
+                android:id="@+id/go_ly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="提 交"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/red"
+                >
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <include layout="@layout/common_title_bar" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/all_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                    android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="@dimen/home_item_left_right_space_15"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical"
+                        android:background="@drawable/input_little_bg">
+                        <requestFocus />
+
+                        <EditText
+                            android:id="@+id/feedContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:background="@null"
+                            android:gravity="left"
+                            android:maxLength="200"
+                            android:padding="@dimen/home_item_left_right_space_15"
+                            android:hint="请输入您对我们的意见，我们将不断优化！（200字以内）"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="@dimen/font_size_14" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                    android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/home_item_left_right_space_15"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_margin="@dimen/home_item_left_right_space_15"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical"
+                        android:background="@drawable/input_little_bg">
+                        <requestFocus />
+                        <EditText
+                            android:id="@+id/iphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:hint="请输入您的手机号或邮箱（选填）"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="@dimen/font_size_14" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

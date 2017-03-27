@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/home_item_left_right_space_15"
+        android:orientation="vertical"
+        >
+<TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        <com.ihidea.multilinechooselib.MultiLineChooseLayout
+            android:id="@+id/flowLayout"
+            style="@style/MultiLineChooseLayoutTags.FlowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+        </com.ihidea.multilinechooselib.MultiLineChooseLayout>
+    </LinearLayout>
+</LinearLayout>

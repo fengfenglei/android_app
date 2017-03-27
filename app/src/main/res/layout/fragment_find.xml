@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include layout="@layout/common_title_bar" />
+    <!-- 首页无数据的显示 -->
+    <FrameLayout
+        android:id="@+id/net_connecte_fail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_error_page"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="轻点屏幕重试"
+                android:textColor="#656565"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </FrameLayout>
+    <com.mhl.shop.main.AllListView
+        android:id="@+id/lv_data"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/line_color"
+        android:dividerHeight="7px"
+        android:scrollbars="none"
+        ></com.mhl.shop.main.AllListView>
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/not_coupons" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/home_item_left_right_space_15"
+                android:text="暂时没有发现~"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

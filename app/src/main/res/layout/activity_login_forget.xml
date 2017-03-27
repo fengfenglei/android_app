@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_login_forget_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                
+                android:orientation="horizontal" >
+   <ImageView
+                    android:layout_width="@dimen/height_registe_left_ic_image"
+                    android:layout_height="@dimen/width_registe_left_ic_image"
+                    android:layout_marginLeft="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/user_login" />
+                <com.mhl.shop.login.myview.ClearEditText
+                    android:id="@+id/et_login_forget_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingRight="10dp"
+                    android:inputType="phone"
+                    android:background="@drawable/et_white"
+                    android:hint="@string/regist_phone"
+                    android:textColorHint="@color/main_text_three_color"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/font_size_14" />
+        
+            </LinearLayout>
+     <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_white"
+                android:orientation="horizontal" >
+
+                <com.mhl.shop.login.myview.ClearEditText
+                    android:id="@+id/et_login_forget_code"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:hint="@string/regist_code"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/main_text_three_color"
+                    android:inputType="number"
+                    android:textSize="@dimen/font_size_14"
+                    android:paddingRight="10dp" />
+
+                <Button
+                    android:id="@+id/tv_login_forget_phone_code"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg_selector"
+                    android:text="@string/regist_getcode"
+                    android:textSize="@dimen/font_size_14"
+
+                    android:textColor="@color/white" />
+            </LinearLayout>
+     <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+            <TextView
+                android:id="@+id/tv_login_forget_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/regist_code_error"
+                android:textColor="@color/red"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_login_forget_next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_grey"
+                android:text="@string/regist_next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_bj"
+             >
+             </LinearLayout>
+</LinearLayout>

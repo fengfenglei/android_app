@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_global_bg"
+    android:orientation="vertical" >
+    <include layout="@layout/common_title_bar"
+        android:id="@+id/titlebar"/>
+
+
+    <LinearLayout
+        android:id="@+id/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="3dp"
+            android:text="@string/put_number"
+            android:textColor="@color/main_text_tow_color"
+            android:textSize="@dimen/font_size_14" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+             android:layout_marginBottom="15dp"
+            android:background="@drawable/yuanjiao"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/put_edit"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:hint="@string/put_ok_number"
+                android:numeric="integer"
+                android:background="@null"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" /> -->
+
+            <TextView
+                android:id="@+id/belonging_to_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="17sp" />
+ </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/line_seperate" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="3dp"
+                android:text="@string/select_amount"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+                <com.ihidea.multilinechooselib.MultiLineChooseLayout
+                    android:id="@+id/singleChoose"
+                    style="@style/MultiLineChooseLayoutTags.SingleChoose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textSingleLine"
+                    android:layout_marginTop="10dp">
+                </com.ihidea.multilinechooselib.MultiLineChooseLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llybuttom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                 
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="应付款："
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_16" >
+            </TextView>
+  <TextView
+                 
+                android:id="@+id/accounts_payable"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="2dp"
+                android:gravity="center_vertical"
+                android:text="0元"
+                android:textColor="@color/red"
+                android:textSize="20dp" >
+            </TextView>
+          <View 
+                  android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                /> 
+            <Button
+                android:id="@+id/recharge_btn"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/red"
+                android:gravity="center"
+                android:text="@string/prepaid_phone_immediately"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16" >
+            </Button>
+        </LinearLayout>
+    
+
+</RelativeLayout>

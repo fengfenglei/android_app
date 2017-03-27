@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/common_title_bar"
+        android:id="@+id/top_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/all_money_ly"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="订单总金额"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/all_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:text="0.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/coupons_money_ly"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="使用优惠劵"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/coupons_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:text="0.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hld_money_ly"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal"
+              >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="使用激活金额"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/hld_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:text="0.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deposit_money_ly"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="使用可提现"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_14" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/deposit_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:text="0.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="在线支付:"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/money_now_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:text="0.00"
+                    android:textColor="@color/red"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/upmpButton"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:background="@color/white" >-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/mhl_checkout_unionpay_icon"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:src="@drawable/mhl_checkout_unionpay_icon" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_toRightOf="@id/mhl_checkout_unionpay_icon"-->
+                    <!--android:text="银联支付"-->
+                    <!--android:textColor="@color/gray"-->
+                    <!--android:textSize="17sp" />-->
+            <!--</RelativeLayout>-->
+
+            <!-- 微信支付 -->
+
+            <RelativeLayout
+                android:id="@+id/wx_pay_lay"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/mhl_checkout_wx_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/weixin_pic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/mhl_checkout_wx_icon"
+                    android:text="微信支付"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_fgx" />
+
+            <RelativeLayout
+                android:id="@+id/alipay"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/mhl_checkout_alipay_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/zfb_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/mhl_checkout_alipay_icon"
+                    android:text="支付宝"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_fgx" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

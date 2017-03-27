@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+<LinearLayout 
+    android:id="@+id/abate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" >
+
+        <CheckBox
+            android:id="@+id/shopping_cart_item_all_chose"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/shopping_cart_shop_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/shopping_cart_item_all_chose" />
+
+        <TextView
+            android:id="@+id/shopping_cart_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/shopping_cart_shop_icon"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_15"
+            android:textColor="@color/main_text_color" />
+    </RelativeLayout>
+
+   <!--  <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/setting_fgx" /> -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line_color"/>
+
+    <!--<com.mhl.shop.shopcart.CartGoodListView-->
+        <!--android:id="@+id/shopping_cart_goods_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:divider="@color/divide_line_color"-->
+        <!--android:scrollbars="none"-->
+        <!--android:dividerHeight="1dp">-->
+    <!--</com.mhl.shop.shopcart.CartGoodListView>-->
+    <com.mhl.shop.shopcart.MyRecyclerView
+        android:id="@+id/shopping_cart_goods_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+    <!-- <ListView
+        android:id="@+id/shopping_cart_goods_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/bg_gray"
+        android:dividerHeight="2dp" >
+    </ListView> -->
+
+</LinearLayout>
+</LinearLayout>

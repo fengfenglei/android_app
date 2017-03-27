@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/page_space"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/regist_pwd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_edt_registe"
+                android:orientation="vertical" >
+
+                <com.mhl.shop.login.myview.ClearEditText
+                    android:id="@+id/regist_et_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/font_size_14"
+                    android:background="@null"
+                    android:hint="@string/regist_hint"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textColorHint="@color/main_text_three_color"
+                    android:inputType="textPassword"
+                    android:paddingRight="10dp" />
+                     <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/regist_pwd_again" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_edt_registe"
+                android:orientation="vertical" >
+
+                <com.mhl.shop.login.myview.ClearEditText
+                    android:id="@+id/regist_et_pwd_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                                        android:textSize="@dimen/font_size_14"
+
+                    android:background="@null"
+                    android:hint="@string/regist_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textColorHint="@color/main_text_three_color"
+                    android:paddingRight="10dp" />
+                     <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/regist_referrer_phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_edt_registe"
+                android:orientation="vertical" >
+
+                <com.mhl.shop.login.myview.ClearEditText
+                    android:id="@+id/regist_et_referrer_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/regist_referrer_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:textSize="@dimen/font_size_14"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textColorHint="@color/main_text_three_color"
+                    android:paddingRight="10dp" />
+
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_regist_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/regist_tv_pwd_again"
+        android:textColor="@color/red"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_regist_two"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_is_pressed"
+        android:text="@string/regist_pwd_finish"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

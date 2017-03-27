@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/common_title_bar" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/all_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="真实姓名："
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="@dimen/home_item_left_right_space_15"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:background="@drawable/input_little_bg">
+                    <requestFocus />
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="身份证号："
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14"
+                    android:id="@+id/textView4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="@dimen/home_item_left_right_space_15"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/input_little_bg">
+                    <requestFocus />
+                    <EditText
+                        android:id="@+id/user_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证正面："
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30" />
+            <ImageView
+                android:background="@drawable/icon_certification"
+                android:id="@+id/icon_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:id="@+id/go01"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="上传正面图片"
+                android:layout_margin="@dimen/home_item_left_right_space_30"
+                android:layout_gravity="center"
+                android:textSize="@dimen/font_size_12"
+                android:textColor="@color/text_color_red"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:background="@drawable/rect_red"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证反面："
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30" />
+            <ImageView
+                android:background="@drawable/iconcertificationno"
+                android:id="@+id/icon_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true" />
+            <Button
+                android:id="@+id/go02"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="上传反面图片"
+                android:layout_margin="@dimen/home_item_left_right_space_30"
+                android:layout_gravity="center"
+                android:textSize="@dimen/font_size_12"
+                android:textColor="@color/text_color_red"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:background="@drawable/rect_red"/>
+        </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/line_color"/>
+            <Button
+                android:id="@+id/go_ly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="提交审核"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@color/red"
+                >
+
+
+            </Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="0.6dp"
+        android:layout_above="@+id/bottomArea"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/line_color" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!-- tab的分割线 -->
+        <ImageView
+            android:id="@+id/tabTop"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8e8" />
+
+
+        <!-- tab的四个按钮 -->
+        <!-- tab的四个按钮 -->
+        <LinearLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tabTop"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <!-- 首页按钮 -->
+            <!-- 使用FrameLayout，最主要的原因是使用它可以很容易的再添加一个消息提醒的小图片 -->
+            <FrameLayout
+                android:id="@+id/homeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/homeImageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/tab_home_button_red" />
+
+                <TextView
+                    android:id="@+id/homeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首页"
+                    android:textColor="#F44444"
+                    android:layout_gravity="bottom|center"
+                    android:textSize="@dimen/font_size_10" />
+            </FrameLayout>
+
+            <!-- 发现按钮 -->
+            <FrameLayout
+                android:id="@+id/findLayout"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/findImageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/tab_found_button_black" />
+
+                <TextView
+                    android:id="@+id/findTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发现"
+                    android:textColor="@color/main_text_color"
+                    android:layout_gravity="bottom|center"
+                    android:textSize="@dimen/font_size_10" />
+            </FrameLayout>
+
+            <!-- 购物车按钮 -->
+            <FrameLayout
+                android:id="@+id/cartLayout"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/cartImageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/tab_shop_button_black" />
+
+                <TextView
+                    android:id="@+id/cartTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="购物车"
+                    android:textColor="@color/main_text_color"
+                    android:layout_gravity="bottom|center"
+                    android:textSize="@dimen/font_size_10" />
+            </FrameLayout>
+
+            <!-- 我按钮 -->
+            <FrameLayout
+                android:id="@+id/meLayout"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/meImageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/tab_my_button_black" />
+
+                <TextView
+                    android:id="@+id/meTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的"
+                    android:textColor="@color/main_text_color"
+                    android:layout_gravity="bottom|center"
+                    android:textSize="@dimen/font_size_10" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

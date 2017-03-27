@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/home_item_left_right_space_30"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_item_left_right_space_15"
+        android:background="@drawable/hld"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前货郎豆"
+        android:layout_marginTop="@dimen/home_item_left_right_space_30"
+        android:textColor="@color/main_text_tow_color"
+        android:textSize="@dimen/font_size_16"/>
+    <TextView
+        android:id="@+id/hld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_item_left_right_space_15"
+        android:text="0"
+        android:textColor="@color/text_color_red"
+        android:textSize="@dimen/font_size_18"/>
+</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/line_color"
+          />
+    </LinearLayout>
+    <include layout="@layout/hld_top"
+        />
+
+    <com.mhl.shop.me.myview.CustomViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.mhl.shop.me.myview.CustomViewPager>
+
+
+</LinearLayout>

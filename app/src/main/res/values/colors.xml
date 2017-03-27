@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app全局背景颜色 -->
+    <color name="main_color_bg">#efefef</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="blue">#00ccff</color>
+    <color name="transparent">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#666666</color>
+    <color name="red">#f44444</color>
+    <color name="orange">#ffff6600</color>
+    <color name="yellew">#fff957</color>
+    <color name="grenn">#51d502</color>
+    <color name="app_global_bg">#efefef</color>
+    <!-- 淡黑色 -->
+    <color name="tv_light_black">#4a4a4a</color>
+    <!-- 分割线浅灰 -->
+    <color name="divide_line_color">#e7e7e7</color>
+    <!-- 灰色 -->
+    <color name="bg_Gray">#CCCCCC</color>
+    <!-- listview点击背景 -->
+    <color name="list_press">#f7f7f7</color>
+    <!--文字颜色黑色一级-->
+    <color name="text_color">#333</color>
+    <!--文字颜色黑色二级-->
+    <color name="text_color_light">#666666</color>
+    <!--文字颜色黑色三级-->
+    <color name="text_color_light_tip">#999</color>
+    <!--文字颜色黑色四级-->
+    <color name="text_color_light_four">#909090</color>
+    <!--红色文字-->
+    <color name="text_color_red">#ff5f5f</color>
+    <color name="text_color_green">#FF5CD25A</color>
+    <color name="tv_search_white">#ffa5a5</color>
+    <!-- 主要字体颜色 -->
+    <color name="main_text_color">#333</color>
+    <color name="main_text_three_color">#999</color>
+    <color name="main_text_tow_color">#666666</color>
+    <!--分割线与线框的颜色-->
+    <color name="line_color">#f2f2f2</color>
+    <!-- 已设置背景颜色 -->
+    <color name="bg_setting_btn">#ffb31d</color>
+
+
+    <!-- 供应商数量好评率 -->
+    <color name="supplier_count_pl">#989898</color>
+    <!-- 商品评论字体颜色-->
+    <color name="goods_comment_color">#b6b6b6</color>
+    <!--商品详情加入购物车按钮背景颜色yellow  -->
+    <color name="goods_yellow_normal">#ffb21e</color>
+    <color name="goods_yellow_press">#f5a100</color>
+    <color name="border_light_color">#ffb21e</color>
+    <color name="red_press">#e03e3e</color>
+
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"/>
+        <com.mhl.shop.main.AllListView
+            android:id="@+id/lv_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:divider="#00000000"
+            android:dividerHeight="0dip"
+            android:visibility="gone"></com.mhl.shop.main.AllListView>
+    <ScrollView
+        android:id="@+id/no_cooupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+         >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/home_item_left_right_space_30"
+            android:background="@drawable/collection_pic"
+            android:id="@+id/imageView">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/home_item_left_right_space_15"
+            android:text="你还没有收藏供应商哦~"
+            android:layout_marginBottom="@dimen/home_item_left_right_space_30"
+            android:textColor="@color/main_text_tow_color"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/home_item_left_right_space_15"
+            android:text="去逛逛~"
+            android:layout_marginBottom="@dimen/home_item_left_right_space_30"
+            android:textColor="@color/text_color_red"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+<TextView
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+    android:background="@drawable/line"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:text="为您推荐"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:background="@drawable/line"/>
+        </LinearLayout>
+        <com.mhl.shop.shopcart.CartGoodListView
+            android:id="@+id/no_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:divider="#00000000"
+            android:dividerHeight="0dip"
+           >
+        </com.mhl.shop.shopcart.CartGoodListView>
+        </LinearLayout>
+    </LinearLayout>
+   </ScrollView>
+</LinearLayout>

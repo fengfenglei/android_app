@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar" />
+
+
+        <com.mhl.shop.main.AllListView
+            android:id="@+id/lv_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@color/line_color"
+            android:dividerHeight="3px"
+            android:scrollbars="none"
+            android:visibility="visible"></com.mhl.shop.main.AllListView>
+
+    <LinearLayout
+        android:id="@+id/me_my_collectSupplier_zero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/my_account_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/noviewhistory" />
+
+            <TextView
+                android:id="@+id/my_supplier_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_account_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="目前还没有浏览记录"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/my_supplier_collect_go_look"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/my_supplier_account_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/obligation_go_look_icon"
+                android:text="去逛逛"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

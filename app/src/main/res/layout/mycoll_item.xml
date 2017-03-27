@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/me_pressed"
+    android:id="@+id/detail_ly"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+    <!-- 显示的图片 -->
+     <LinearLayout
+        android:id="@+id/mycoll_rel_left_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/mycoll_cart_goods_icon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_bg"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mycoll_cart_goods_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textSize="@dimen/font_size_14" 
+                android:textColor="@color/main_text_tow_color"
+                android:layout_marginBottom="15dp"
+                android:text="防守打法"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/mycoll_cart_goods_sprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+				android:ellipsize="end"
+				android:layout_marginLeft="10dp"
+				android:textSize="@dimen/font_size_12"                android:text="防守打法"
+                android:textColor="@color/main_text_three_color" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/more"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/collection_icon_more"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="@dimen/home_item_left_right_space_15"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+        android:background="@color/line_color"/>
+</LinearLayout>    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@color/line_color"/></LinearLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/common_title_bar" />
+
+
+
+    <LinearLayout
+        android:id="@+id/add_bank_card_ly"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:text="到账银行卡:"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/line_color" />
+
+        <!-- 银行卡信息(没有添加银行卡时隐藏) -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="addcard"
+             >
+            <LinearLayout
+                android:id="@+id/have_card_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="9.8"
+                android:orientation="vertical"
+                 >
+                <TextView
+                    android:id="@+id/card_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:text=""
+                    android:textColor="@color/text_color_light"
+                    android:textSize="14sp" />
+                <TextView
+                     android:id="@+id/card_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 没有银行卡信息时显示 -->
+
+            <LinearLayout
+                android:id="@+id/no_card_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="9.8"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/no_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="请完善银行卡信息"
+                    android:textColor="@color/text_color_light" />
+            </LinearLayout> 	
+
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="13dp"
+                android:layout_weight=".2"
+                android:background="@drawable/arrow_icon_gray" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/line_color"/>
+    <!-- 提现金额 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:text="提现金额:"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/font_size_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_little_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="¥"
+                    android:textSize="@dimen/font_size_14"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <EditText
+                    android:id="@+id/money_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请输入提现金额"
+                    android:maxLines="1"
+                    android:digits="0123456789."
+                    android:inputType="number"
+                    android:scrollHorizontally="true"
+                    android:textSize="@dimen/font_size_14"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="可提现金额 ¥："
+                    android:textColor="@color/text_color_light_four"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                     android:id="@+id/my_ban"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:text="100"
+                    android:textColor="#7a7a7a"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/max_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="最大化提现"
+                    android:textColor="#05aaff"
+                    android:visibility="gone"
+                    android:textSize="@dimen/font_size_14"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/line_color"/>
+    <!-- 备注 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:text="提现备注:"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/font_size_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/input_little_bg"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@null"
+                    android:hint="请输入备注内容(五十个字以内)"
+                    android:gravity="top"
+                    android:maxLength="50"
+                    android:scrollHorizontally="true"
+                    android:textSize="@dimen/font_size_14"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/line_color"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/font_size_14"
+        android:visibility="gone"
+        android:text="申请成功后3个工作日到账"/>
+    <Button
+        android:id="@+id/tx_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_bg_selector"
+        android:text="确认提现"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

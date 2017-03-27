@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_bg">
+
+    <include layout="@layout/common_title_bar" />
+
+
+
+
+
+
+
+    <!-- 充值 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/home_item_left_right_space_15"
+        android:orientation="horizontal"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="金额(元)："
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14" />
+
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="填写充值金额"
+            android:digits="1234567890"
+            android:background="@null"
+            android:inputType="number"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/home_item_left_right_space_15"
+        android:text="单笔充值最小金额100元，最大50000元"
+        android:textColor="@color/main_text_tow_color"
+        android:textSize="@dimen/font_size_14" />
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg_selector"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示："
+            android:layout_margin="@dimen/home_item_left_right_space_15"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/main_text_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,充值成功后，余额可能存在延迟现象，一般1到5分钟之内到账，如有问题，请咨询客服；"
+            android:layout_margin="@dimen/home_item_left_right_space_15"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/main_text_three_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,充值完成后，您可以进入账户充值记录页面进行查看余额充值状态；"
+            android:layout_margin="@dimen/home_item_left_right_space_15"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/main_text_three_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3,如遇到任何支付问题可以查看在线支付帮助或者联系卖货郎官方客服400-333-566；"
+            android:layout_margin="@dimen/home_item_left_right_space_15"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/main_text_three_color"/>
+    </LinearLayout>
+</LinearLayout>

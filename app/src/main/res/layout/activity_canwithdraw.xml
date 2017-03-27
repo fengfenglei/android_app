@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center_vertical"
+
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/main_text_color"
+            android:text="可提现金额:"
+
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/red"
+            android:text="¥100"
+            android:textSize="@dimen/font_size_18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/divide_line_color"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/divide_line_color" />
+    <!-- 充值，提现 -->
+
+    <LinearLayout
+        android:id="@+id/ll_recharge_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_go_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="+ 去充值"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line_color" />
+        <LinearLayout
+            android:id="@+id/ll_acount_balance_withdraw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="- 提现"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/divide_line_color"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="可提现金额明细"
+        android:textColor="@color/main_text_tow_color"
+        android:textSize="@dimen/font_size_14"
+        android:id="@+id/textView" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/divide_line_color" />
+    <com.mhl.shop.main.AllListView
+        android:id="@+id/lv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:visibility="visible"></com.mhl.shop.main.AllListView>
+    <LinearLayout
+        android:id="@+id/me_my_zero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/my_account_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/noviewhistory" />
+
+            <TextView
+                android:id="@+id/my_supplier_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_account_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="目前还没有交易记录"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

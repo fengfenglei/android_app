@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+<include layout="@layout/common_title_bar"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/deit_pay_pwd_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/setting_fgx" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left_edt_registe"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/my_account_setting_pay_pwd_et"
+                android:orientation="vertical" >
+
+                <com.mhl.shop.login.myview.ClearEditText
+                    android:id="@+id/edit_pay_input_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="@string/regist_code"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textColorHint="@color/main_text_three_color"
+                    android:paddingRight="10dp"
+                    android:textSize="@dimen/font_size_14" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/edit_pay_code"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:background="@drawable/button_bg_selector"
+                android:text="@string/regist_getcode"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/pay_pwd_new_pay"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/font_size_14"  />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_edt_registe"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <com.mhl.shop.login.myview.ClearEditText
+                android:id="@+id/edit_pay_pwd_new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:hint="@string/regist_setting_pwd"
+                android:imeOptions="actionNext"
+                android:textColor="@color/main_text_tow_color"
+                android:textColorHint="@color/main_text_three_color"
+                android:inputType="numberPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/font_size_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/pay_pwd_new_pay_again"
+            android:textColor="@color/text_color_light"
+
+            android:textSize="@dimen/font_size_14"  />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_edt_registe"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical" >
+
+            <com.mhl.shop.login.myview.ClearEditText
+                android:id="@+id/edit_pay_pwd_new_pwd_again"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:hint="@string/regist_setting_pwd"
+                android:imeOptions="actionNext"
+                android:inputType="numberPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/main_text_tow_color"
+                android:textColorHint="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_pay_pwd_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_grey"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

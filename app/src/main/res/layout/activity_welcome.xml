@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+  >
+
+    <ImageView
+        android:id="@+id/splash_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+
+        >
+
+        <ImageView
+            android:id="@+id/activity_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:background="@drawable/skip_btn_bg"
+            android:gravity="center"
+            android:text="跳转"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

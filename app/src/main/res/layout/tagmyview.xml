@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tag_btn"
+    android:minHeight="25dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:minWidth="30dp"
+    android:background="@drawable/all_shopcomment_normal"
+    android:text="fsdf "
+    android:gravity="center"
+    android:textSize="12sp">
+</Button>

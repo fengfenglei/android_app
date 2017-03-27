@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_color_bg"
+    tools:context="com.mhl.shop.home.FirstPageFragment" >
+    <com.mhl.shop.homepage.HomeTopBar
+        android:id="@+id/fra_hometopbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.mhl.shop.home.HomeListView
+        android:id="@+id/home_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:divider="@color/line_color"
+        android:scrollbars="none"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"></com.mhl.shop.home.HomeListView>
+
+
+
+    <ImageView
+        android:id="@+id/home_to_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:src="@drawable/home_totop" >
+    </ImageView>
+
+    <!-- 加载框的显示 -->
+    <FrameLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/k"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="拼命加载中..."
+                android:textColor="#656565"
+                android:textSize="@dimen/font_size_14"
+                />
+        </LinearLayout>
+    </FrameLayout>
+        <!-- 首页无数据的显示 -->
+    <FrameLayout
+            android:id="@+id/net_connecte_fail"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_error_page"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+					android:layout_gravity="center"  
+                    android:text="轻点屏幕重试"
+                     android:textColor="#656565"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+
+
+</RelativeLayout>

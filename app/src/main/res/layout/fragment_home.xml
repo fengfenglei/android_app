@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/rotate_header_list_view_frame" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#e1e1e1" cube_ptr:ptr_duration_to_close="200" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2" cube_ptr:ptr_resistance="1.7">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top">
+
+            </android.support.v7.widget.RecyclerView></com.chanven.lib.cptr.PtrClassicFrameLayout>
+
+
+
+        <com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@android:color/holo_green_light">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+             <!--轮播图-->
+            <fragment
+                android:id="@+id/fragment_cycle_viewpager_content"
+                android:name="com.mhl.shop.homepage.CycleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+                    <!--顶部搜索-->
+
+                </FrameLayout>
+                <!-- 快捷按钮 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" >
+                    <!-- 我的收藏 -->
+                    <LinearLayout
+                        android:id="@+id/home_ll_mycollection"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+                        <ImageView
+                            android:id="@+id/home_iv_my_collect"
+                            android:layout_width="45dp"
+                            android:background="@drawable/icon_bg"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:id="@+id/home_tv_my_collect"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="2dp"
+                            android:textColor="@color/main_text_tow_color"
+                            android:text="签到"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <!-- 话费充值 -->
+
+                    <LinearLayout
+                        android:id="@+id/home_ll_phone_charge"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/home_iv_phone_charge"
+                            android:layout_width="45dp"
+                            android:background="@drawable/icon_bg"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:id="@+id/home_tv_phone_charge"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="2dp"
+                            android:text="签到"
+                            android:textColor="@color/main_text_tow_color"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <!-- 物流信息 -->
+
+
+                    <!--
+                         <LinearLayout
+                        android:id="@+id/home_ll_logistics"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/home_iv_logistics"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:src="@drawable/home_logistics" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="2dp"
+                            android:text="@string/logistics"
+                            android:textColor="@color/main_text_tow_color"
+                            android:textSize="13sp" />
+                    </LinearLayout>-->
+                    <!-- 我要集采 -->
+
+                    <LinearLayout
+                        android:id="@+id/home_ll_groupbuy_area"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/home_iv_groupbuy_area"
+                            android:layout_width="45dp"
+                            android:background="@drawable/icon_bg"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:id="@+id/home_tv_groupbuy_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="2dp"
+                            android:text="签到"
+                            android:textColor="@color/main_text_tow_color"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <!-- 我要推广 -->
+
+                    <LinearLayout
+                        android:id="@+id/home_ll_want_promote"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/home_iv_want_promote"
+                            android:layout_width="45dp"
+                            android:background="@drawable/icon_bg"
+                            android:layout_height="45dp" />
+
+                        <TextView
+                            android:id="@+id/home_tv_want_promote"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="2dp"
+                            android:text="签到"
+                            android:textColor="@color/main_text_tow_color"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader>
+        <com.mhl.shop.homepage.HomeTopBar
+            android:id="@+id/fra_hometopbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

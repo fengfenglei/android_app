@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@color/main_color_bg"
+    android:orientation="vertical" >
+
+    <!-- 轮播图 -->
+
+    <LinearLayout
+        android:id="@+id/lladvertiseboard_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color_bg"
+        android:orientation="vertical" />
+    <!-- 轮播图下面的按钮 话费充值栏目 快捷方式-->
+
+
+        <LinearLayout
+        android:id="@+id/home_ll_container "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    
+    <!-- 今日推荐的文字部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:paddingLeft="5dp"
+            android:src="@drawable/recommend_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="今日推荐"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:paddingRight="5dp"
+            android:src="@drawable/recommend_right" />
+    </LinearLayout>
+
+</LinearLayout>

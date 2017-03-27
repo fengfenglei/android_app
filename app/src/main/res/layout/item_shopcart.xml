@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_shopcart_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:alpha="1"
+            android:background="@color/line_color" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_item_left_right_space_15"
+            android:background="@color/white"
+            android:id="@+id/view"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_item_shopcart_shopselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+                android:paddingLeft="@dimen/home_item_left_right_space_15"
+                android:paddingRight="@dimen/home_item_left_right_space_15"
+                android:paddingTop="@dimen/home_item_left_right_space_15"
+                android:paddingBottom="@dimen/home_item_left_right_space_15"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_shopcart_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/obligation_shop_icon"
+                android:text="宝儿家服装"
+                android:textColor="@color/main_text_tow_color"
+                android:padding="@dimen/home_item_left_right_space_15"
+                android:layout_marginRight="@dimen/home_item_left_right_space_15"
+                android:drawablePadding="@dimen/home_item_left_right_space_15"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:alpha="1"
+            android:background="@color/line_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/shop_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/home_item_left_right_space_15"
+                android:layout_marginBottom="@dimen/home_item_left_right_space_15"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/tv_item_shopcart_clothselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check"
+                    android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+                    android:padding="@dimen/home_item_left_right_space_15"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_item_shopcart_cloth_pic"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_margin="@dimen/home_item_left_right_space_15"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_item_shopcart_clothname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dasdasd"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:lines="2"
+                            android:ellipsize="end"
+                            android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                            android:textColor="@color/main_text_tow_color"
+                            android:textSize="@dimen/font_size_14" />
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--/>-->
+
+                        <TextView
+                            android:id="@+id/tv_item_shopcart_cloth_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="dasdasd"
+                            android:layout_marginRight="@dimen/home_item_left_right_space_15"
+                            android:textColor="@color/text_color_red"
+                            android:textSize="@dimen/font_size_14" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_item_shopcart_cloth_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:ellipsize="end"
+                            android:text="dasdasd"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="#aeaeae"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                            android:textSize="@dimen/font_size_12" />
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="20dp"-->
+                            <!--android:layout_weight="1"-->
+                         <!--/>-->
+                        <TextView
+                            android:id="@+id/shopping_cart_goods_item_old_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="dasdasd"
+                            android:textSize="@dimen/font_size_12"
+                            android:layout_marginRight="@dimen/home_item_left_right_space_15"
+                            android:textColor="@color/main_text_three_color" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        >
+
+
+
+
+                        <!-- 数量的加和减 -->
+
+                        <LinearLayout
+                            android:id="@+id/num_add_sub_layout"
+                            android:layout_width="75dp"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/yuanjiao_gou"
+                            android:layout_marginBottom="@dimen/home_item_left_right_space_15"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/shopping_cart_goods_subtract"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3" >
+
+                                <ImageView
+                                    android:id="@+id/iv_item_shopcart_cloth_minus"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/shopping_subtract_no" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/my_fgx_one_txt"
+                                android:layout_width="0.6dp"
+                                android:layout_height="match_parent"
+                                android:background="#b7b7b7" />
+
+                            <TextView
+                                android:id="@+id/et_item_shopcart_cloth_num"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:contentDescription="@string/app_name"
+                                android:gravity="center"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:id="@+id/my_fgx_two_txt"
+                                android:layout_width="0.6dp"
+                                android:layout_height="match_parent"
+                                android:background="#b7b7b7" />
+
+                            <LinearLayout
+                                android:id="@+id/shopping_cart_goods_add"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3" >
+
+                                <ImageView
+                                    android:id="@+id/iv_item_shopcart_cloth_add"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/shopping_add_yes" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:alpha="1"
+                android:background="@color/line_color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+      >
+    <include layout="@layout/common_title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!-- 旧密码 -->
+        <LinearLayout
+            android:id="@+id/old_password_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/old_password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/old_password_text"
+                    android:layout_weight="1"
+                    android:textColor="@color/main_text_tow_color"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/font_size_14"/>
+                <TextView
+                    android:id="@+id/forget_password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forget_password_text"
+                     android:layout_weight="1"
+                    android:textSize="@dimen/font_size_14"
+                    android:visibility="invisible"
+                    android:textColor="@color/blue"
+                    android:gravity="right|center_vertical"/>
+            </LinearLayout>
+            <com.mhl.shop.login.myview.ClearEditText
+                android:id="@+id/old_password_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="@string/old_tip_password_text"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@color/main_text_three_color"
+
+                android:textSize="@dimen/font_size_14"
+                android:background="@drawable/et_white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+        </LinearLayout>
+        <!-- 新密码 -->
+        <LinearLayout
+            android:id="@+id/new_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                    android:id="@+id/new_password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_passwod_text"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14"/>
+           <com.mhl.shop.login.myview.ClearEditText
+                android:id="@+id/new_password_edit"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/new_tip_passwod_text"
+                android:textSize="@dimen/font_size_14"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+               android:textColorHint="@color/main_text_three_color"
+
+               android:paddingRight="10dp"
+                android:background="@drawable/et_white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+        </LinearLayout>
+        <!-- 新密码 -->
+        <LinearLayout
+            android:id="@+id/reg_new_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+           <TextView
+                    android:id="@+id/reg_new_password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_passwod_text2"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14"/>
+
+            <com.mhl.shop.login.myview.ClearEditText
+                 android:id="@+id/reg_new_password_edit"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:hint="@string/reg_new_tip_password_text"
+                 android:textSize="@dimen/font_size_14"
+                 android:inputType="textPassword"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
+                android:textColorHint="@color/main_text_three_color"
+
+                android:layout_marginTop="10dp"
+                 android:background="@drawable/et_white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update_confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:text="提交"
+            android:background="@drawable/btn_grey"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18"/>
+    </LinearLayout>
+
+</LinearLayout>

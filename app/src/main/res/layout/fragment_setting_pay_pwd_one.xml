@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/my_account_setting_pay_pwd_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/main_text_tow_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/setting_fgx" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="@dimen/margin_left_edt_registe"
+                android:layout_weight="3"
+                android:background="@drawable/my_account_setting_pay_pwd_et"
+                android:orientation="vertical" >
+
+                <com.mhl.shop.login.myview.ClearEditText
+                    android:id="@+id/my_account_setting_pay_input_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="@string/regist_code"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textColorHint="@color/main_text_three_color"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="@dimen/font_size_14" >
+
+                    <requestFocus />
+                </com.mhl.shop.login.myview.ClearEditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/my_account_setting_pay_code"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:background="@drawable/button_bg_selector"
+                android:text="@string/regist_getcode"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/my_account_setting_pay_pwd_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_grey"
+        android:text="@string/regist_next"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

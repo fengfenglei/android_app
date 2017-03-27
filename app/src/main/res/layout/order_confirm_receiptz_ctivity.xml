@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/common_title_bar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="45dp"
+        android:orientation="vertical">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/order_icon"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/font_size_22"
+    android:layout_marginTop="@dimen/home_item_left_right_space_30"
+    android:textColor="@color/main_text_color"
+    android:text="确认收货成功！"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_item_left_right_space_15"
+        android:background="@color/line_color"/>
+    <!--商品LinearLayout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_bg"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/home_item_left_right_space_15"
+                android:textSize="14sp"
+                android:maxLines="1"
+
+                android:textColor="@color/main_text_tow_color"
+                android:ellipsize="end"
+                android:text="maihuol"/>
+
+            <TextView
+                android:id="@+id/guige"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:textColor="@color/main_text_three_color"
+                android:ellipsize="end"
+                android:text="maihuol"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/home_item_left_right_space_15"
+            >
+            <TextView
+                android:id="@+id/big_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/home_item_left_right_space_15"
+                android:textColor="@color/main_text_tow_color"
+                android:text="maihuol"/>
+            <TextView
+                android:id="@+id/lit_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:textColor="@color/text_color_light_four"
+                android:text="maihuol"/>
+
+            <TextView
+                android:id="@+id/shop_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:textColor="@color/main_text_tow_color"
+                android:text="num"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/home_item_left_right_space_30"
+        android:padding="@dimen/home_item_left_right_space_30"
+        android:orientation="horizontal">
+
+        <!--退款详情-->
+        <Button
+            android:id="@+id/order_detail"
+            style="@style/BigButton"
+            android:text="订单详情"
+            android:layout_weight="1"
+            />
+        <!--退款详情-->
+        <Button
+            android:id="@+id/liji_pingjia"
+            style="@style/BigWhiteButton"
+            android:text="立即评价"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_selector"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>

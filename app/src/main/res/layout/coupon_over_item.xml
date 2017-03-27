@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/coupons_expired_bj01"
+        >
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_18"
+                    android:layout_marginRight="@dimen/home_item_left_right_space_15"
+                    android:text="￥"/>
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_26"
+                    android:text="0"/>
+            </LinearLayout>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="货郎券"
+        android:textSize="@dimen/font_size_18"
+        android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/coupons_expired_bj02"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/man_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货郎券"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@color/main_text_tow_color"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有效期"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/main_text_three_color"/>
+    </LinearLayout>
+</LinearLayout>

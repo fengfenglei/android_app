@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+    <!-- 显示的图片 -->
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+         android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+         android:layout_marginRight="@dimen/home_item_left_right_space_30"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_bg"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+       android:layout_marginTop="@dimen/home_item_left_right_space_15"
+        android:layout_marginBottom="@dimen/home_item_left_right_space_15"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/main_text_tow_color"
+                />
+
+            <RatingBar
+                android:id="@+id/comment_ratingBar_star"
+                style="@style/customGoodsRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1" >
+            </RatingBar>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/main_text_three_color"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+        android:layout_marginRight="@dimen/home_item_left_right_space_30"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/main_text_tow_color"
+        />
+
+
+    <TextView
+        android:id="@+id/shop_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+        android:layout_marginRight="@dimen/home_item_left_right_space_30"
+        android:textSize="@dimen/font_size_12"
+        android:textColor="@color/main_text_three_color"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/home_item_left_right_space_15"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recyclerview_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:layout_centerVertical="true"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+        android:layout_marginRight="@dimen/home_item_left_right_space_30"
+        android:layout_marginBottom="@dimen/home_item_left_right_space_30"
+        android:textSize="@dimen/font_size_14"
+        android:text="567879"
+        android:textColor="#0b3889"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/line_color"/>
+</LinearLayout>

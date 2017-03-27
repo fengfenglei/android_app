@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/common_title_bar" />
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/all_ly"
+        android:visibility="gone"
+        android:background="@color/white">
+    <TextView
+        android:id="@+id/conent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_size_16"
+        android:layout_margin="40dp"
+        android:layout_marginTop="@dimen/home_item_left_right_space_30"
+        android:layout_marginBottom="@dimen/home_item_left_right_space_30"
+        android:textColor="@color/main_text_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/home_item_left_right_space_30"
+        android:background="@color/line_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="认证渠道： "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="卖货郎商城实名认证"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="申请时间： "/>
+            <TextView
+                android:id="@+id/applicationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="认证渠道： "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="审核时间： "/>
+            <TextView
+                android:id="@+id/auditTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="认证渠道： "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="审核状态： "/>
+            <TextView
+                android:id="@+id/auditStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="认证渠道： "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="备注说明： "/>
+            <TextView
+                android:id="@+id/auditOpinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="认证渠道： "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="真实姓名： "/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="真实姓名： "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/home_item_left_right_space_30"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="身份证号码： "/>
+            <TextView
+                android:id="@+id/user_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_three_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:text="认证渠道： "/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/certification_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="重新认证"
+        android:layout_margin="@dimen/home_item_left_right_space_30"
+        android:textSize="@dimen/font_size_18"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@drawable/btn_red"/>
+</LinearLayout></LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_home_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+
+    <RelativeLayout
+        android:id="@+id/home_news"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+        android:id="@+id/iv_msg_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mhl_notice"
+        android:layout_alignTop="@+id/mhl_notice"
+        android:src="@drawable/red_point"
+        android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/mhl_notice"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/home_icon_message"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <!-- 搜索 -->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="7dp"
+        android:layout_weight="7" >
+
+        <FrameLayout
+            android:id="@+id/home_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/home_search_tv"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/home_search_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/search_goods_supplier"
+                android:paddingLeft="40dp"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/tv_search_white"
+                android:textColorHint="@color/main_text_three_color"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/home_icon_search" />
+
+
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!-- 扫一扫 -->
+
+    <LinearLayout
+        android:id="@+id/home_ll_scan"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/home_icon_scan" />
+
+    </LinearLayout>
+
+</LinearLayout>

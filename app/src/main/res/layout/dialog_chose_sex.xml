@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="性别"
+        android:textColor="@color/red"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red" />
+
+    <RadioGroup
+        android:id="@+id/chose_sex_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/chose_sex_man"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:button="@null"
+            android:drawableRight="@drawable/regist_selector"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="男"
+            android:textColor="@color/text_color_light"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/setting_fgx" />
+
+        <RadioButton
+            android:id="@+id/chose_sex_girl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:button="@null"
+            android:drawableRight="@drawable/regist_selector"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="女"
+            android:textColor="@color/text_color_light"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/setting_fgx" />
+
+        <RadioButton
+            android:id="@+id/chose_sex_privary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:button="@null"
+            android:drawableRight="@drawable/regist_selector"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="保密"
+            android:textColor="@color/text_color_light"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/setting_fgx" />
+    </RadioGroup>
+
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <Button
+	        android:id="@+id/chose_sex_cancel"
+			android:layout_width="0dp"
+			android:layout_height="90px"
+			android:layout_margin="50px"
+			android:background="@drawable/button_cancle_bg_selector"
+	        android:text="取消"
+	        android:textColor="@color/text_color_light"
+	        android:textSize="@dimen/font_size_16"
+	        android:layout_weight="1"/>
+        <Button
+	        android:id="@+id/chose_sex_ok"
+			android:layout_width="0dp"
+			android:layout_height="90px"
+			android:layout_margin="50px"
+	        android:text="确定"
+	        android:textColor="@color/white"
+	        android:layout_weight="1"
+	        android:background="@drawable/btn_red"
+	        android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+    
+
+</LinearLayout>

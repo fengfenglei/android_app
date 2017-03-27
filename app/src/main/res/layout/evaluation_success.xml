@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_color_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/line_color" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/shop_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_bg"
+                    android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+                        android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:maxLines="2"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:text="maihuol"/>
+                <!--立即评价-->
+                <Button
+                    android:id="@+id/order_evluation"
+                    style="@style/RedOtherButton"
+                    android:layout_gravity="center"
+                    android:text="立即评价"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

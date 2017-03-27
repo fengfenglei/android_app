@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"/>
+
+    <com.mhl.shop.main.AllListView
+        android:id="@+id/lv_coupon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/line_color"
+        android:scrollbars="none"
+        android:visibility="gone"
+       ></com.mhl.shop.main.AllListView>
+    <ScrollView
+        android:id="@+id/sly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+         >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/home_item_left_right_space_30"
+            android:layout_gravity="center"
+            android:background="@drawable/collection_pic" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/home_item_left_right_space_15"
+            android:text="你还没有收藏商品哦~"
+            android:layout_marginBottom="@dimen/home_item_left_right_space_30"
+            android:textColor="@color/main_text_tow_color"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/home_item_left_right_space_15"
+            android:text="去逛逛~"
+            android:layout_marginBottom="@dimen/home_item_left_right_space_30"
+            android:textColor="@color/text_color_red"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+<TextView
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+    android:background="@drawable/line"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:text="猜你喜欢"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                android:background="@drawable/line"/>
+        </LinearLayout>
+        <com.mhl.shop.search.wight.ScrollViewWithListView
+            android:id="@+id/lv_no"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/line_color"
+            android:scrollbars="none"
+            android:visibility="visible"></com.mhl.shop.search.wight.ScrollViewWithListView>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

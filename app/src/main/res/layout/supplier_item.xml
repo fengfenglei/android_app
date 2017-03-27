@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!-- 显示的图片 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+            android:layout_marginRight="@dimen/home_item_left_right_space_30"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/icon_bg"
+               />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/home_item_left_right_space_15"
+            android:layout_marginBottom="@dimen/home_item_left_right_space_15"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="卖货郎"
+                    android:textSize="@dimen/font_size_12"
+                    android:textColor="@color/main_text_tow_color"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="卖货郎"
+                        android:textSize="@dimen/font_size_10"
+                        android:textColor="@color/main_text_three_color"
+                        />
+            </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/go"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:text="进店"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/font_size_12"
+                android:textColor="@color/main_text_tow_color"
+                android:background="@drawable/rect_black"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginRight="@dimen/home_item_left_right_space_15"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_15">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recyclerview_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/line_color"/>
+</LinearLayout>

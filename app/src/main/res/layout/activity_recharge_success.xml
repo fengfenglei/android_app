@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff1df">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+        android:layout_marginRight="@dimen/home_item_left_right_space_30"
+        android:layout_marginTop="30dp"
+
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/successful_icon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_margin="@dimen/home_item_left_right_space_15"
+                android:text="支付成功！"
+               />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_margin="@dimen/home_item_left_right_space_15"
+                android:text="支付成功"
+                />
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_margin="@dimen/home_item_left_right_space_15"
+                android:text="支付成功"
+                />
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14"
+                android:layout_margin="@dimen/home_item_left_right_space_15"
+                android:text="支付成功"
+                />
+        </LinearLayout>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/main_text_three_color"
+        android:textSize="@dimen/font_size_14"
+        android:layout_marginTop="30dp"
+        android:text="话费预计在10分钟内到账，请留意短息通知！"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/main_text_three_color"
+        android:textSize="@dimen/font_size_14"
+        android:text="如遇高峰期可能会延迟"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
+    <Button
+        android:id="@+id/go"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="返回首页"
+        android:layout_marginTop="@dimen/home_item_left_right_space_30"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_size_14"
+        android:gravity="center"
+        android:textColor="@color/text_color_red"
+        android:background="@drawable/rect_red"/>
+</LinearLayout>

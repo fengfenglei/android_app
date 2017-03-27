@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar" />
+    <!--订单编号LinearLayout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/home_item_left_right_space_15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/main_text_three_color"
+            android:text="订单号："/>
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/main_text_three_color"
+            android:text="000123456"/>
+        <TextView
+            android:id="@+id/order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/home_item_left_right_space_15"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/text_color_red"
+            android:visibility="gone"
+            android:text="订单状态"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/check_log_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="font_size_8">8sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_17">17sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_26">26sp</dimen>
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+    <!-- 页面间距 -->
+    <dimen name="page_space">15dp</dimen>
+    <!-- 注册界面item项左边图片宽度 -->
+    <dimen name="width_registe_left_ic_image">20dp</dimen>
+    <dimen name="height_registe_left_ic_image">20dp</dimen>
+    <dimen name="home_item_left_right_space_30">30px</dimen>
+    <dimen name="home_item_left_right_space_20">20px</dimen>
+    <dimen name="home_item_left_right_space_15">15px</dimen>
+    <!-- 注册按钮高度 -->
+    <dimen name="height_btn_registe">50dp</dimen>
+    <!-- 注册输入框左边距 -->
+    <dimen name="margin_left_edt_registe">10dp</dimen>
+</resources>

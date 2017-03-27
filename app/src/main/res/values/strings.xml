@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">卖货郎</string>
+    <!--登录-->
+    <string name="login">登录</string>
+    <string name="account">账户:</string>
+    <string name="password">密码:</string>
+    <string name="forget_password">找回密码</string>
+    <string name="action_settings">Settings</string>
+    <string name="toast_login_account_error">登录失败</string>
+    <string name="toast_login_account_isempty">帐号不能为空</string>
+    <string name="toast_login_psw_isempty">密码不能为空</string>
+    <string name="toast_account_error">账号错误</string>
+    <!--忘记密码-->
+    <string name="retrieve_login_password">找回登录密码</string>
+    <string name="input_phone_number">请输入手机号码</string>
+    <string name="input_auth_code">请输入验证码</string>
+    <string name="get_auth_code">获取验证码</string>
+    <string name="next">下一步</string>
+    <!-- 添加收货地址 -->
+    <string name="my_account_adress_username">收货人姓名   :</string>
+    <string name="my_account_adress_phone">手机号码   :</string>
+    <string name="my_account_adress_postalcode">邮政编码  :</string>
+    <string name="my_account_adress_where">所在地区 :</string>
+    <string name="my_account_adress_detail">详细地址 :</string>
+    <string name="my_account_add_adress_btn">保存</string>
+    <string name="my_account_add_address_title">地区选择</string>
+    <!-- 登录/注册 -->
+    <string name="regist_agreement">同意卖货郎商城用户注册协议</string>
+    <string name="regist_agreement_title">卖货郎注册协议</string>
+    <string name="regist_phone">请输入手机号码</string>
+    <string name="regist_code">请输入验证码</string>
+    <string name="toast_phone_error">手机号格式错误</string>
+    <string name="regist_getcode">获取验证码</string>
+    <string name="regist_next">下一步</string>
+    <string name="regist_find_pws">找回登录密码</string>
+    <string name="regist_code_error">验证码错误</string>
+    <string name="regist_login_loading">正在登录...</string>
+    <string name="regist_new_pwd">请输入新的登录密码</string>
+    <string name="regist_hint">请输入6-18个字符</string>
+    <string name="toast_setting_new_pwd">请输入新密码</string>
+    <string name="toast_setting_pwd_success">新密码设置成功</string>
+    <string name="regist_setting_pwd">请输入6位数字</string>
+    <string name="toast_setting_pwd_6">密码不能少于6个字符</string>
+    <string name="toast_setting_pwd_18">密码不能超过18个字符</string>
+    <string name="regist_pwd_again">请再次输入登录密码</string>
+    <string name="regist_tv_pwd_again">两次输入密码不一致,请重新输入</string>
+    <string name="regist_pwd_finish">完成</string>
+    <string name="retist_setting_pwd">设置密码</string>
+    <string name="regist_pwd">请输入登录密码</string>
+    <string name="regist_referrer_phone">请输入推荐人手机号码</string>
+    <string name="regist_referrer_hint">(选填)</string>
+    <string name="regist_loading">玩命注册中...</string>
+    <string name="regist_one">1.验证手机号</string>
+    <string name="regist_two">2.设置登录密码</string>
+    <string name="retist_tip">号码已经注册 !</string>
+    <string name="regist_hints">如果您长时间无法接收验证短信，请拨打客服电话4000333566进行咨询</string>
+    <string name="set_new_password">设置新密码</string>
+    <string name="reset_new_password">修改密码</string>
+    <string name="input_old_login_password">请输入你的原登录密码</string>
+    <string name="input_new_login_password">请输入登录密码</string>
+    <string name="input_new_login_password_tip">请输入你的新登录密码</string>
+    <string name="input_new_login_password_again">请再次输入登录密码</string>
+    <string name="input_new_login_password_again_tip">请再次输入你的新登录密码</string>
+    <string name="complete">完成</string>
+    <string name="submit">提交</string>
+    <string name="username_temp_error">用户名不能为空</string>
+    <string name="updateloginpasswod_text">修改登录密码</string>
+    <string name="old_password_text">旧密码</string>
+    <string name="forget_password_text">忘记密码 ?</string>
+    <string name="old_tip_password_text">请输入你的原登录密码</string>
+    <string name="new_passwod_text">新密码</string>
+    <string name="new_passwod_text2">再次输入新密码</string>
+    <string name="new_tip_passwod_text">请输入您的新登录密码</string>
+    <string name="reg_new_tip_password_text">请再次输入您的新登录密码</string>
+    <string name="old_password_empty_error">旧密码不能为空</string>
+    <string name="new_password_empty_error">新密码不能为空</string>
+    <string name="reg_new_password_empty_error">两次密码不一致</string>
+    <string name="update_login_password_error">修改密码失败</string>
+    <string name="pay_pwd_new_pwd">请输入支付密码</string>
+    <string name="pay_pwd_new_pwd_again">请再次输入支付密码</string>
+    <string name="pay_pwd_new_pay">请输入新支付密码</string>
+    <string name="pay_pwd_new_pay_again">请再次输入新支付密码</string>
+    <!-- 首页 -->
+    <string name="home_scan">点我扫</string>
+    <string name="search_goods_supplier">请输入商品/供应商</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+
+    <!-- 话费充值 -->
+    <string name="telephone_fee_charging">话费充值</string>
+    <string name="put_number">请输入要充值的号码</string>
+    <string name="put_ok_number">请输入电话号码</string>
+    <string name="select_amount">请选择你要充值的金额</string>
+    <string name="prepaid_phone_immediately">立即充值</string>
+    <!-- 我的 -->
+    <string name="tv_my_account_adress_manage">账户、地址管理</string>
+    <string name="tv_exchange_icon">更换头像</string>
+    <string name="tv_get_camera">拍照</string>
+    <string name="tv_get_pic">我的相册</string>
+    <string name="tv_my_account_obligation">待付款</string>
+    <string name="tv_my_account_receive">待收货</string>
+    <string name="tv_my_account_evaluate">待评价</string>
+    <string name="tv_my_account_shouhuo">已收货</string>
+    <string name="tv_my_account_return_goods">退货</string>
+    <string name="tv_obligation_zero_adress_tv">目前还没有相关的订单 ~</string>
+    <string name="tv_obligation_zero_other_tv">目前还没有任何的订单 ~</string>
+    <string name="tv_obligation_zero_adress_go_look">去逛逛</string>
+    <string name="tv_all_order">全部订单</string>
+    <string name="myorder_title_txt">我的订单</string>
+    <string name="check_allorder_txt">查看全部订单</string>
+    <string name="financialcenter_title_txt">财务中心</string>
+    <string name="check_my_account_txt">查看我的账户信息</string>
+    <string name="promotioncenter_title_txt">推广中心</string>
+    <string name="promotion_youfenyun_txt">推广有奖哦</string>
+    <string name="youhuijuan_title_txt">我的优惠券</string>
+    <string name="mycollection_title_txt">我的收藏</string>
+    <string name="mycollection_count_txt">2</string>
+    <string name="browserecord_title_txt">浏览记录</string>
+    <string name="browserecord_count_txt">2</string>
+    <string name="helperandrank_title_txt">帮助与反馈</string>
+
+    <string name="cart_shop_login_btn_text">登 录</string>
+    <string name="no_login_status">亲，你还没有登录哦~</string>
+
+
+
+    <string name="comment_title_text">商品评论</string>
+    <string name="comment_count_text">(0评论)</string>
+    <string name="more_comment_text">查看全部0条评论</string>
+    <string name="praise_text">好评度</string>
+    <string name="praise_percent_text">100%</string>
+    <string name="shopp_number_text">商品数量:</string>
+    <string name="inventory_count">件</string>
+    <string name="supplier_scription_text">宝贝描述:</string>
+    <string name="logistics_service_text">物流服务:</string>
+    <string name="seller_service_text">卖家服务:</string>
+    <string name="supplier_index_title_text">供应商主页</string>
+    <string name="collection_supplier_text">收藏供应商</string>
+    <string name="collectioned_supplier_text">已收藏供应商</string>
+    <string name="join_supplier_text">进入供应商</string>
+    <string name="numberTitleText">数量</string>
+    <string name="pop_reduceText">—</string>
+    <string name="pop_defaultEdit">1</string>
+    <string name="pop_addText">+</string>
+    <string name="collection_shopText">收藏</string>
+    <string name="fenxiang_text">分享</string>
+    <string name="purchase_immediately">立即购买</string>
+    <string name="addshoppingcart">加入购物车</string>
+    <string name="menu_lock">Lock</string>
+    <string name="menu_unlock">Unlock</string>
+
+    <string name="logistics_money">配送方式:</string>
+    <string name="shop_message">给供应商留言(45字符以内)</string>
+    <string name="true_money">实付款 :</string>
+    <string name="order_commit">提交订单</string>
+    <string name="order_status_text"></string>
+    <string name="order_adress_zero">请完善收货地址</string>
+    <string name="hld">货郎豆</string>
+    <string name="coupons">优惠券</string>
+    <string name="use">使用</string>
+    <string name="account_money">账户余额</string>
+    <string name="goods_all_money">商品总金额 :</string>
+    <string name="freight_all_money">运费合计 :</string>
+    <string name="hld_money">货郎豆抵现 :</string>
+    <string name="coupons_money">使用优惠券 :</string>
+    <string name="prestore_money">预付款 :</string>
+    <string name="balance_money">余额支付 :</string>
+    <string name="inventory_text">库存</string>
+    <string name="setting_default_adress">设为默认地址</string>
+    <!--一般订单状态-->
+    <string name="revised_price">修改价格</string>
+    <string name="delete_order">删除订单</string>
+    <string name="shipped_together">立即发货</string>
+    <string name="open_single_delivery">发货</string>
+    <string name="view_Logistics">查看物流</string>
+    <string name="modify_Logistics">修改物流</string>
+    <string name="agree_refund">同意退款</string>
+    <string name="view_evaluation">查看评价</string>
+    <string name="published_evaluation">发表评价</string>
+    <string name="view_orders">查看订单</string>
+
+    <string name="label_cancel">取消</string>
+    <string name="label_ok">确定</string>
+    <string name="permission_title_rationale">权限需求</string>
+    <string name="permission_read_storage_rationale">选择图片时需要读取权限</string>
+    <string name="permission_write_storage_rationale">拍照时需要存储权限</string>
+
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">更新版本 </string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">马上更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+
+    <string name="san">将二维码放入框内扫一扫</string>
+
+</resources>

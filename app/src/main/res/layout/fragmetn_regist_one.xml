@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frg_regist_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/page_space"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/height_registe_left_ic_image"
+                android:layout_height="@dimen/width_registe_left_ic_image"
+                android:scaleType="centerInside"
+                android:src="@drawable/mobile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_edt_registe"
+                android:orientation="vertical" >
+
+                <com.mhl.shop.login.myview.ClearEditText
+                    android:id="@+id/regist_et_user_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textColorHint="@color/main_text_three_color"
+                    android:textSize="@dimen/font_size_14"
+                    android:hint="@string/regist_phone"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone" />
+            </LinearLayout>
+        </LinearLayout>
+     <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+        <TextView
+            android:id="@+id/retist_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/retist_tip"
+            android:textColor="@color/red"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.mhl.shop.login.myview.ClearEditText
+                android:id="@+id/et_regist_phone_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="@string/regist_code"
+                android:textColor="@color/main_text_tow_color"
+                android:textColorHint="@color/main_text_three_color"
+                android:imeOptions="actionNext"
+                android:textSize="@dimen/font_size_14"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/btn_regist_phone_code"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_selector"
+                android:text="@string/regist_getcode"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/white" />
+        </LinearLayout>
+     <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+        <TextView
+            android:id="@+id/regist_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/regist_hints"
+            android:textColor="@color/main_text_three_color"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp" >
+
+            <CheckBox
+                android:id="@+id/regist_check"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/regist_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/main_text_three_color"
+                android:layout_toRightOf="@id/regist_check"
+                android:text="@string/regist_agreement" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_regist_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_grey"
+        android:text="@string/regist_next"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bj"
+         >
+         </LinearLayout>
+</LinearLayout>

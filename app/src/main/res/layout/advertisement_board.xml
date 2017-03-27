@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+     android:layout_marginTop="0dp"
+     android:paddingTop="0dp"
+    android:orientation="vertical" >
+
+    <com.mhl.shop.homepage.TouchedViewPager
+        android:id="@+id/vp_advertise"
+        android:layout_width="match_parent"
+        android:layout_height="180dip" />
+    <LinearLayout
+        android:id="@+id/ll_mPointContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:orientation="horizontal" 
+        android:layout_marginBottom="10dp">
+    </LinearLayout>
+
+</RelativeLayout>

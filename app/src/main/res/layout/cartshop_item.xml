@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/abate_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/me_pressed"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+        <!-- 显示的图片 -->
+
+        <RelativeLayout
+            android:id="@+id/rel_cart_left"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" >
+
+            <CheckBox
+                android:id="@+id/shopping_cart_item_goods_chose"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:checked="false"
+                android:focusable="false"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_size_18" />
+
+            <ImageView
+                android:id="@+id/shopping_cart_goods_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/shopping_cart_item_goods_chose" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shopping_cart_goods_item_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/main_text_three_color"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <!--
+                         <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    -->
+
+                    <TextView
+                        android:id="@+id/shopping_cart_goods_item_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="@dimen/font_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/shopping_cart_goods_SpecInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="#aeaeae"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/shopping_cart_goods_item_old_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/main_text_three_color" />
+                </LinearLayout>
+                <!-- 数量的加和减 -->
+
+                <LinearLayout
+                    android:id="@+id/num_add_sub_layout"
+                    android:layout_width="75dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuanjiao_gou"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/shopping_cart_goods_subtract"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3" >
+
+                        <ImageView
+                            android:id="@+id/shopping_cart_goods_subtract_img"
+                            android:layout_width="17dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/shopping_subtract_no" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/my_fgx_one_txt"
+                        android:layout_width="0.6dp"
+                        android:layout_height="match_parent"
+                        android:background="#b7b7b7" />
+
+                    <TextView
+                        android:id="@+id/shopping_cart_goods_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/my_fgx_two_txt"
+                        android:layout_width="0.6dp"
+                        android:layout_height="match_parent"
+                        android:background="#b7b7b7" />
+
+                    <LinearLayout
+                        android:id="@+id/shopping_cart_goods_add"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3" >
+
+                        <ImageView
+                            android:id="@+id/shopping_cart_goods_add_img"
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/shopping_add_yes" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

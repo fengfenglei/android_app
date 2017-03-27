@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/font_size_14"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:paddingLeft="3dp"
+    android:paddingTop="6dp"
+    android:singleLine="true"
+    android:paddingBottom="6dp"
+    android:text="dasd"
+    android:paddingRight="3dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/common_title_bar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="35dp"
+        android:orientation="vertical">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/order_icon"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/font_size_20"
+    android:layout_marginTop="@dimen/home_item_left_right_space_30"
+    android:textColor="@color/main_text_color"
+    android:text="感谢您的评价！"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="@dimen/home_item_left_right_space_30"
+        android:orientation="horizontal">
+
+        <!--查看评价-->
+        <Button
+            android:id="@+id/view_evaluation"
+            style="@style/BigButton"
+            android:text="查看评价"
+            android:layout_weight="1"
+            />
+        <!--完成-->
+        <Button
+            android:id="@+id/ok"
+
+            style="@style/BigButton"
+            android:text="完成"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/data_ly"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/line_color"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@color/main_text_three_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+            android:layout_marginRight="@dimen/home_item_left_right_space_30"
+           android:text="继续评价"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:background="@color/main_text_three_color"/>
+    </LinearLayout>
+    <com.mhl.shop.main.AllListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@color/gray"
+        android:scrollbars="none"
+        android:visibility="visible"></com.mhl.shop.main.AllListView>
+</LinearLayout>
+</LinearLayout>

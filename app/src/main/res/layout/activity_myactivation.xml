@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/main_text_color"
+            android:text="激活金额:"
+
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/activated_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/red"
+            android:text="¥100"
+            android:textSize="@dimen/font_size_18" />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/divide_line_color" />
+    <!-- 充值，提现 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/home_item_left_right_space_15"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+        >
+            <TextView
+                android:id="@+id/activated_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="已激活"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14" />
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             />
+
+            <TextView
+                android:id="@+id/activated_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="待激活"
+                android:textColor="@color/main_text_tow_color"
+                android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/divide_line_color"
+        />
+
+    <include layout="@layout/activated_top"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/divide_line_color"
+        />
+    <com.mhl.shop.me.myview.CustomViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.mhl.shop.me.myview.CustomViewPager>
+
+</LinearLayout>

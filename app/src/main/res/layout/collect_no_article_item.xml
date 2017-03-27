@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/me_pressed"
+    android:id="@+id/item"
+    >
+
+    <!-- 显示的图片 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+            android:layout_marginRight="@dimen/home_item_left_right_space_15"
+            android:layout_marginTop="@dimen/home_item_left_right_space_15"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_bg"
+            android:layout_marginBottom="@dimen/home_item_left_right_space_15"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="dasdas"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/main_text_tow_color"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="dasdas"
+            android:maxLines="1"
+            android:layout_marginRight="@dimen/home_item_left_right_space_30"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/main_text_three_color"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+android:layout_marginBottom="@dimen/home_item_left_right_space_15"
+        >
+        <!-- 显示的图片 -->
+        <LinearLayout
+            android:id="@+id/mycoll_rel_left_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/article_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_bg"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="dasdas"
+
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/font_size_16"
+                    android:textColor="@color/main_text_tow_color" />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/item_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="dasdas"
+                    android:textSize="@dimen/font_size_14"
+                    android:textColor="@color/main_text_three_color"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    />
+                    <Button
+                        android:id="@+id/go"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:text="立即收藏"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/font_size_12"
+                        android:textColor="@color/text_color_red"
+                        android:layout_marginRight="@dimen/home_item_left_right_space_30"
+                        android:background="@drawable/rect_red"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/line_color"/>
+</LinearLayout>

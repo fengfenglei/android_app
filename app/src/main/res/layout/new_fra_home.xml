@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_bg"
+    tools:context="com.mhl.shop.homepage.HomePageFragment" >
+
+        <com.mhl.shop.homepage.HomeListView
+            android:id="@+id/home_lv_recommmend"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingTop="0dp"
+            android:verticalSpacing="5dp" >
+        </com.mhl.shop.homepage.HomeListView>
+
+        <com.mhl.shop.homepage.HomeTopBar
+        android:id="@+id/fra_hometopbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        
+        
+        <ImageView
+        android:id="@+id/home_to_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/home_totop" >
+    </ImageView>
+    
+        
+        <!-- 首页无数据的显示 -->
+    <FrameLayout
+            android:id="@+id/net_connecte_fail"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_error_page"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+					android:layout_gravity="center"  
+                    android:text="轻点屏幕重试"
+                     android:textColor="#656565"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+        
+
+</RelativeLayout>

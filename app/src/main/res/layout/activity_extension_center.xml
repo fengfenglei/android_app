@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_title_bar" />
+        <WebView android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+                <Button
+                    android:id="@+id/go_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="立即邀请好友"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_16"
+                    android:background="@drawable/red"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

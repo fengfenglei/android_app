@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/my_account_setting_icon"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/me_pressed"
+                    android:layout_height="90dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="头像"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <!--<com.mhl.shop.main.wight.CircularImage-->
+                        <!--android:id="@+id/my_account_user_icon"-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="70dp"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="35dp"-->
+                        <!--android:background="@drawable/my_account_default_user_icon"-->
+                        <!--app:border_width="3dp" />-->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/my_account_user_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/my_account_default_user_icon"
+                        app:civ_border_width="3dp"
+                        app:civ_border_color="@color/white"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrow_icon_gray" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/setting_fgx" />
+
+                <RelativeLayout
+                    android:id="@+id/my_account_setting_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="用户名"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/my_account_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="35dp"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:visibility="gone"
+                        android:src="@drawable/arrow_icon_gray" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/setting_fgx" />
+
+                <RelativeLayout
+                    android:id="@+id/my_account_setting_sex"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/me_pressed"
+                    android:layout_height="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="性别"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/my_account_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="35dp"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrow_icon_gray" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/setting_fgx" />
+
+                <RelativeLayout
+                    android:id="@+id/my_account_setting_birthday"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/me_pressed"
+                    android:layout_height="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="出生日期"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/my_account_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="35dp"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrow_icon_gray" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/setting_fgx" />
+
+                <RelativeLayout
+                    android:id="@+id/my_account_setting_address_manage"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/me_pressed"
+                    android:layout_height="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="地址管理"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrow_icon_gray" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/setting_fgx" />
+
+                <RelativeLayout
+                    android:id="@+id/my_account_setting_login_pwd"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/me_pressed"
+                    android:layout_height="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="修改登录密码"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrow_icon_gray" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/setting_fgx" />
+
+                <RelativeLayout
+                    android:id="@+id/my_account_setting_renzheng"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/me_pressed"
+                    android:layout_height="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="实名认证"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/my_account_renzheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="35dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/promote_bj"
+                        android:textSize="@dimen/font_size_12"
+                        android:padding="3dp"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrow_icon_gray" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/setting_fgx" />
+
+                <RelativeLayout
+                    android:id="@+id/my_account_setting_pay_pwd"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/me_pressed"
+                    android:layout_height="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginLeft="20dp"
+                        android:text="支付密码"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/my_account_setting_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="35dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/promote_red"
+                        android:textSize="@dimen/font_size_12"
+                        android:padding="3dp"
+                        android:visibility="gone"/>
+                    
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrow_icon_gray" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/my_account_exit_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:visibility="gone"
+                android:background="@drawable/my_account_btn_red"
+                android:text="退出登录"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

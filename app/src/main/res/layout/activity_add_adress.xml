@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/my_account_adress_username"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+                    android:orientation="vertical" >
+
+                    <com.mhl.shop.login.myview.ClearEditText
+                        android:id="@+id/my_account_adress_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/main_text_tow_color"
+                        android:textSize="@dimen/font_size_14"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/setting_fgx" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/my_account_adress_phone"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+                    android:orientation="vertical" >
+
+                    <com.mhl.shop.login.myview.ClearEditText
+                        android:id="@+id/my_account_adress_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/main_text_tow_color"
+                        android:textSize="@dimen/font_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/setting_fgx" />
+
+            <!-- 邮政编码 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/my_account_adress_postalcode"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+                    android:orientation="vertical" >
+
+                    <com.mhl.shop.login.myview.ClearEditText
+                        android:id="@+id/my_account_adress_postalcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/main_text_tow_color"
+                        android:textSize="@dimen/font_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/setting_fgx" />
+
+            <!-- 所在地区 -->
+            <RelativeLayout
+                android:id="@+id/my_account_choose_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp" >
+
+                <TextView
+                    android:id="@+id/my_account_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/my_account_adress_where"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14" />
+
+               
+                <TextView
+                    android:id="@+id/my_account_adress_where_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_toRightOf="@id/my_account_address_tv"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/arrow_icon_gray" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/setting_fgx" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/my_account_adress_detail"
+                    android:textColor="@color/main_text_tow_color"
+                    android:textSize="@dimen/font_size_14"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+                    android:orientation="vertical" >
+
+                    <com.mhl.shop.login.myview.ClearEditText
+                        android:id="@+id/my_account_adress_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:imeOptions="actionNext"
+                        android:lines="2"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/main_text_tow_color"
+                        android:textSize="@dimen/font_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/setting_fgx" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/my_account_add_adress_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+
+            android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+            android:layout_marginRight="@dimen/home_item_left_right_space_30"
+            android:layout_marginTop="@dimen/home_item_left_right_space_30"
+            android:background="@drawable/button_bg_selector"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mReason">
+        <item>请选择原因</item>
+        <item>价格问题 </item>
+        <item>服务问题</item>
+        <item>质量问题</item>
+        <item>物流问题</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="bank">
+        <item>借记卡</item>
+        <item>信用卡 </item>
+    </string-array>
+</resources>

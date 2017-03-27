@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar" />
+    
+    <LinearLayout
+        android:id="@+id/tuikuan_tuihuo"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/home_item_left_right_space_30"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+        style="@style/bigButton"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="退货且退款"
+            android:drawableLeft="@drawable/th_icon"
+            android:drawablePadding="@dimen/home_item_left_right_space_15"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tuikuan"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/home_item_left_right_space_30"
+        android:layout_marginLeft="@dimen/home_item_left_right_space_30"
+        style="@style/bigButton"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="退款（无需退货）"
+            android:drawablePadding="@dimen/home_item_left_right_space_15"
+
+            android:drawableLeft="@drawable/tk_icon"
+            />
+
+    </LinearLayout>
+</LinearLayout>

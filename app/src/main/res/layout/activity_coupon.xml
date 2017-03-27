@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <com.mhl.shop.main.AllListView
+            android:id="@+id/lv_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/home_item_left_right_space_15"
+            android:layout_marginLeft="@dimen/home_item_left_right_space_15"
+            android:divider="@color/line_color"
+            android:dividerHeight="10px"
+            android:scrollbars="none"
+           ></com.mhl.shop.main.AllListView>
+    <LinearLayout
+        android:id="@+id/no_cooupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+         >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/not_coupons" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/home_item_left_right_space_15"
+            android:text="您暂时没有优惠券~"
+            android:textColor="@color/main_text_tow_color"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
